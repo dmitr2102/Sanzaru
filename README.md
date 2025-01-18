@@ -15,6 +15,11 @@ git clone https://github.com/microsoft/vcpkg && .\vcpkg\bootstrap-vcpkg.bat
 
 cmake -G "Visual Studio 17 2022" -A x64 -B build
 ```
+and if you want to build with examples:
+
+```console
+cmake -G "Visual Studio 17 2022" -A x64 -B build -DBUILD_EXAMPLES=ON -DBUILD_TESTS=ON -DUSE_STEAMWEBRTC=ON
+```
 Открыть build/GameNetworkingSockets.sln в Visual Studio, собрать
 
 >Переделать сборку, слишком геморно
